@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="src/icons/icon-dev.png" />
+    <title>Dev.ia - Login</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&family=Syne:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" src="/src/main.ts"></script>
+  </head>
+  <body>
+    <main>
+      <!--DIV ESQURDA -->
+      <div class="esquerda">
+        <!-- TITULO ESQUERDA -->
+        <div class="container-titulo-esquerda">
+          <div class="circle"></div>
+          <h2>DEV<span>.ia</span></h2>
+        </div>
+        <!-- CONTAINER COM MODELOS -->
+        <div class="container-modelos">
+          <div class="modelo">
+            <img src="src/icons/icon-book.png" alt="" />
+            <div class="texto">
+              <h3>Study</h3>
+              <p>Mentoria Técnina</p>
+            </div>
+          </div>
+          <div class="modelo">
+            <img src="src/icons/icon-raio.png" alt="" />
+            <div class="texto">
+              <h3>Agent</h3>
+              <p>Engenharia de Código</p>
+            </div>
+          </div>
+          <div class="modelo">
+            <img src="src/icons/icon-plan.png" alt="" />
+            <div class="texto">
+              <h3>Plan</h3>
+              <p>Copiloto Técnico</p>
+            </div>
+          </div>
+          <div class="modelo">
+            <img src="src/icons/icon-prova.png" alt="" />
+            <div class="texto">
+              <h3>Exam</h3>
+              <p>Examinadora Técnica</p>
+            </div>
+          </div>
+        </div>
+        <!-- DESCRIÇÃO FINAL -->
+        <div class="container-descricao">
+          <p>"Dev.ia — sua IA de engenharia.</p>
+          <p>Quatro modelos. Uma missão"</p>
+        </div>
+      </div>
+      <!-- DIV DIREITA -->
+      <div class="direita">
+        <!-- TITULO DIREITA -->
+        <div class="container-titulo-direita">
+          <h1>
+            Bem vindo (a)
+            <span class="span-volta" id="span-volta">de volta.</span>
+          </h1>
+          <p class="p-header-e-footer frase-header" id="p-header">
+            Entre na sua conta para continuar de onde parou
+          </p>
+        </div>
+        <!-- BOTÕES ENTRAR E CRIAR CONTA -->
+        <div class="form-tabs">
+          <button
+            type="button"
+            id="button-cadastrar"
+            class="active"
+            onclick="clicarEntrar(false)"
+          >
+            Criar conta
+          </button>
+          <button type="button" id="button-etrar">Entrar</button>
+        </div>
+        <!-- FORMULÁRIO LOGAR/CADASTRAR USUÁRIO -->
+        <form class="logar-cadastrar-usuario">
+          <label class="label-form" id="label-cadastro-nome">NOME</label>
+          <input
+            class="input-form"
+            type="text"
+            placeholder="Seu nome"
+            id="input-cadastro-nome"
+          />
+          <label class="label-form">EMAIL</label>
+          <input
+            class="input-form"
+            type="email"
+            name="email"
+            id=""
+            placeholder="seu@email.com"
+          />
+          <label class="label-form">SENHA</label>
+          <input
+            class="input-form"
+            type="password"
+            name="senha"
+            id=""
+            placeholder="••••••••"
+          />
+          <label class="label-form" id="label-confirmar-senha"
+            >CONFIRMAR SENHA</label
+          >
+          <input
+            class="input-form"
+            type="password"
+            name="senha"
+            placeholder="••••••••"
+            id="input-confirmar-senha"
+          />
+          <div class="esqueceu-senha">
+            <a href="#esqueceusenha">Esqueceu a senha?</a>
+          </div>
+          <button type="submit" class="texto-button">ENTRAR</button>
+        </form>
+        <!-- FOOTER -->
+        <div class="politicas">
+          <p class="p-header-e-footer">
+            Ao continuar, você concorda com os
+            <a href="#termos">Termos de Uso</a> e
+            <a href="#privacidade">Política de Privacidade</a> do DEV.ia
+          </p>
+        </div>
+      </div>
+    </main>
+    <!-- MODAL TERMOS DE USO -->
+    <div class="container-modal-termos">
+      <div class="modal">
+        <div class="cabecalho-modal">
+          <div class="cabecalho-esquerda">
+            <img src="src/icons/icon -document.png" alt="" />
+            <div class="cabecalho-meio">
+              <h2 class="h2-header-e-footer">Termo de Uso</h2>
+              <p class="p-header-e-footer">Última atualização: março de 2026</p>
+            </div>
+          </div>
+          <button class="botao-fechar-janela">X</button>
+        </div>
+        <div class="body-modal">
+          <div class="secao">
+            <h3 class="h3-modal">1. Aceitação dos Termos</h3>
+            <p class="p-modal">
+              Ao acessar e utilizar o DEV.ia, você concorda com estes Termos de
+              Uso. Se não concordar com qualquer parte destes termos, não
+              utilize a plataforma.
+            </p>
+          </div>
+          <div class="secao">
+            <h3 class="h3-modal">2. Descrição dos Serviços</h3>
+            <p class="p-modal">
+              O DEV.ia é uma plataforma de inteligência artificial voltada para
+              desenvolvedores, oferecendo quatro modos de interação
+            </p>
+            <ul class="ul-lista">
+              <li class="li-lista">
+                <strong>Study</strong> - mentoria técnica e aprendizado guiado
+              </li>
+              <li class="li-lista">
+                <strong>Agent</strong> - execução de tarefas e geração de código
+              </li>
+              <li class="li-lista">
+                <strong>Plan</strong> - planejamento técnico e arquitetura
+              </li>
+              <li class="li-lista">
+                <strong>Exam</strong> - avaliação de conhecimento técnico
+              </li>
+            </ul>
+          </div>
+          <div class="secao">
+            <h3 class="h3-modal">3. Uso aceitável</h3>
+            <p class="p-modal">
+              Você se compromete a utilizar o DEV,ia apenas para fins lícitos. É
+              vedado:
+            </p>
+            <ul class="ul-lista">
+              <li class="li-lista">
+                Usar a plataforma para atividades ilegais
+              </li>
+              <li class="li-lista">Tentar acessar sistemas não autorizados</li>
+              <li class="li-lista">
+                Reproduzir conteúdo gerado sem autorização
+              </li>
+              <li class="li-lista">Compartilhar sua conta com terceiros</li>
+            </ul>
+          </div>
+          <div class="secao">
+            <h3 class="h3-modal">4. Conta e Responsabilidade</h3>
+            <p class="p-modal">
+              Você é responsável por manter a confidencialidade de suas
+              credenciais de acesso e por todas as atividades realizadas em sua
+              conta. Notifique-nos imediatamente em caso de uso não autorizado.
+            </p>
+          </div>
+          <div class="secao">
+            <h3 class="h3-modal">5. Propriedade Intelectual</h3>
+            <p class="p-modal">
+              Todo o conteúdo da plataforma DEV.ia, incluindo textos,
+              interfaces, logos e funcionalidades, é protegido por direitos
+              autorais e outras leis de propriedade intelectual.
+            </p>
+          </div>
+          <div class="secao">
+            <h3 class="h3-modal">6. Limitação e Responsabilidade</h3>
+            <p class="p-modal">
+              O DEV.ia é fornecido "como está", sem garantias de qualquer tipo.
+              Não nos responsabilizamos por decisões técnicas tomadas com base
+              nas respostas geradas pela plataforma.
+            </p>
+          </div>
+          <div class="secao">
+            <h3 class="h3-modal">7. Alterações nos Termos</h3>
+            <p class="p-modal">
+              Reservamo-nos o direito de modificar estes termos a qualquer
+              momento. Alterações significativas serão comunicadas por email ou
+              notificação na plataforma.
+            </p>
+          </div>
+        </div>
+        <div class="footer-modal">
+          <p class="p-header-e-footer">
+            Ao aceitar, você confirma que leu e compreendeu os termos.
+          </p>
+          <button class="botao-padrao-laranja">Entendi</button>
+        </div>
+      </div>
+    </div>
+    <!-- MODAL PRIVACIDADE -->
+    <div class="container-modal-privacidade">
+      <div class="modal">
+        <div class="cabecalho-modal">
+          <div class="cabecalho-esquerda">
+            <img src="src/icons/icon-lock.png" alt="" />
+            <div class="cabecalho-meio">
+              <h2 class="h2-header-e-footer">Política de Privacidade</h2>
+              <p class="p-header-e-footer">Última atualização: março de 2026</p>
+            </div>
+          </div>
+          <button class="botao-fechar-janela">X</button>
+        </div>
+        <div class="body-modal">
+          <div class="secao">
+            <h3 class="h3-modal">1. Informações que coletamos</h3>
+            <p class="p-modal">
+              Coletamos informações que você nos fornece diretamente ao criar
+              uma conta ou utilizar a plataforma:
+            </p>
+            <ul class="ul-lista">
+              <li class="li-lista">Nome e endereço de email</li>
+              <li class="li-lista">Senha em formato criptografado</li>
+              <li class="li-lista">Histórico de conversar com IA</li>
+              <li class="li-lista">
+                Dados de uso e preferências da plataforma
+              </li>
+            </ul>
+          </div>
+          <div class="secao">
+            <h3 class="h3-modal">2. Como usamos as suas informações</h3>
+            <p class="p-modal">Utilizamos as suas informações para:</p>
+            <ul class="ul-lista">
+              <li class="li-lista">
+                Fornecer e melhorar os serviços do DEV.ia
+              </li>
+              <li class="li-lista">
+                Personalizar sua experiência na plataforma
+              </li>
+              <li class="li-lista">
+                Enviar comunicações relacionadas à sua conta
+              </li>
+              <li class="li-lista">
+                Garantir a segurança e integridade da plataforma
+              </li>
+            </ul>
+          </div>
+          <div class="secao">
+            <h3 class="h3-modal">3. Compartilhamento de dados</h3>
+            <p class="p-modal">
+              Não vendemos, alugamos ou compartilhamos suas informações pessoais
+              com terceiros para fins comerciais. Seus dados podem ser
+              compartilhados apenas nos seguintes casos
+            </p>
+            <ul class="ul-lista">
+              <li class="li-lista">
+                Com provedores de serviço essenciais para o funcionamento da
+                plataforma
+              </li>
+              <li class="li-lista">Quando exigido por lei ou ordem judicial</li>
+              <li class="li-lista">
+                Para proteger os direitos e segurança dos usuários
+              </li>
+            </ul>
+          </div>
+          <div class="secao">
+            <h3 class="h3-modal">4. Armazenamento e Segurança</h3>
+            <p class="p-modal">
+              Seus dados são armazenados em servidores seguros e protegidos.
+              Utilizamos criptografia e outras medidas de segurança para
+              proteger suas informações contra acesso não autorizado, alteração
+              ou destruição.
+            </p>
+          </div>
+          <div class="secao">
+            <h3 class="h3-modal">5. Seus Direitos</h3>
+            <p class="p-modal">Você tem direito a:</p>
+            <ul class="ul-lista">
+              <li class="li-lista">
+                Acessar os dados pessoais que temos sobre você
+              </li>
+              <li class="li-lista">Solicitar a correção de dados incorretos</li>
+              <li class="li-lista">
+                Solicitar a exclusão da sua conta e dados associados
+              </li>
+              <li class="li-lista">Exportar seu histórico de conversar</li>
+            </ul>
+          </div>
+          <div class="secao">
+            <h3 class="h3-modal">6. Cookies</h3>
+            <p class="p-modal">
+              Utilizamos cookies essenciais para manter a sua sessão ativa e
+              garantir o funcionamento correto da plataforma. Não utilizamos
+              cookies de rastreamento ou publicidade
+            </p>
+          </div>
+          <div class="secao">
+            <h3 class="h3-modal">7. Contato</h3>
+            <p class="p-modal">
+              Para dúvidas sobre esta política ou para exercer seus direitos,
+              entre em contato através do email: privacidade@devia.com
+            </p>
+          </div>
+        </div>
+        <div class="footer-modal">
+          <p class="p-header-e-footer">
+            Seus dados são tratados com segurança e transparência.
+          </p>
+          <button class="botao-padrao-laranja">Entendi</button>
+        </div>
+      </div>
+    </div>
+    <!-- MODAL ESQUECEU A SENHA: FORMULÁRIO -->
+    <div class="container-modal-formulario-senha">
+      <div class="modal">
+        <div class="cabecalho-modal">
+          <div class="cabecalho-esquerda">
+            <img src="src/icons/icon-key.png" alt="" />
+            <div class="cabecalho-meio">
+              <h2 class="h2-header-e-footer">Esqueceu a senha?</h2>
+              <p class="p-header-e-footer">Vamos te ajudar a recuperar</p>
+            </div>
+          </div>
+          <button class="botao-fechar-janela">X</button>
+        </div>
+        <div class="body-modal">
+          <form class="form-esqueceu-senha">
+            <p class="p-header-e-footer">
+              Digite o email a sua conta e enviaremos um link para você criar
+              uma nova senha
+            </p>
+            <label class="label-form">EMAIL</label>
+            <input
+              class="input-form"
+              type="email"
+              name="email"
+              id="inputEmailEsqueceuSenha"
+              placeholder="seu@email.com"
+            />
+            <p class="p-header-e-footer" id="mensagemAdicionada"></p>
+          </form>
+        </div>
+        <div class="footer-modal">
+          <a class="p-header-e-footer" href="#voltarlogin">← Voltar ao login</a>
+          <button
+            class="botao-padrao-laranja"
+            id="botao-enviar-link-email"
+            onclick="enviarLinkSenhaPorEmail()"
+          >
+            Enviar o link
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- MODAL ESQUECEU A SENHA: CONFIRMAÇÃO LINK ENVIADO -->
+    <div class="container-modal-confirmacao-link">
+      <div class="modal">
+        <div class="cabecalho-modal">
+          <div class="cabecalho-esquerda">
+            <img src="src/icons/icon-key.png" alt="" />
+            <div class="cabecalho-meio">
+              <h2 class="h2-header-e-footer">Esqueceu a senha?</h2>
+              <p class="p-header-e-footer">Vamos te ajudar a recuperar</p>
+            </div>
+          </div>
+          <button class="botao-fechar-janela" id="fechar-confrimacao-header">
+            X
+          </button>
+        </div>
+        <div class="body-modal">
+          <div class="div-img-email">
+            <img src="src/icons/icon-email.png" alt="icone-emal" />
+          </div>
+          <h2 class="h2-header-e-footer">Email enviado!</h2>
+          <p class="p-header-e-footer">
+            Enviar o link de recuperação para
+            <span id="emailDigitado">seu@email.com</span>.Verifique sua caixa de
+            entrada
+          </p>
+        </div>
+        <div class="footer-modal">
+          <button class="botao-padrao-laranja" id="fechar-confrimacao-x">
+            Fechar
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

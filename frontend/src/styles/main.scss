@@ -1,0 +1,54 @@
+:root {
+  /* CORES */
+  --cream: #f2ede4; /* fundo principal */
+  --cream-dark: #eae3d8; /* fundo sidebar e inputs */
+  --cream-deeper: #ded6c8; /* divisores, bordas */
+  --terra: #c97b5a; /* cor de destaque principal */
+  --terra-light: #e09a7a; /* hover do terracota */
+  --terra-dim: rgba(201, 123, 90, 0.1); /* fundo suave terracota */
+  --sage: #7a9e8e; /* cor do modo Study */
+  --sage-light: #9bbdad; /* hover do sage */
+  --sand: #c4b5a5; /* neutro médio */
+  --text: #3d2e22; /* texto principal */
+  --text-mid: #7a6355; /* texto secundário */
+  --text-soft: #a89585; /* placeholder, hints */
+  /* SOMBRAS */
+  --shadow-sm:
+    5px 5px 12px rgba(92, 74, 58, 0.1), -3px -3px 8px rgba(255, 255, 255, 0.8);
+  --shadow-in:
+    inset 3px 3px 8px rgba(92, 74, 58, 0.1),
+    inset -3px -3px 7px rgba(255, 255, 255, 0.75);
+  --shadow-md:
+    8px 8px 20px rgba(92, 74, 58, 0.13),
+    -4px -4px 12px rgba(255, 255, 255, 0.85);
+  --shadow-terra:
+    6px 6px 16px rgba(201, 123, 90, 0.35),
+    -2px -2px 8px rgba(255, 255, 255, 0.2);
+  /* FONTES */
+  --font-titulo: 'DM Serif Display', serif;
+  --font-label: 'Syne', sans-serif;
+  --font-body: 'DM Mono', monospace;
+  /* BORDAS */
+  --radius: 50px;
+  --radius-sm: 12px;
+  --radius-xs: 8px;
+}
+
+html {
+  height: 100%;
+}
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: var(--cream);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
