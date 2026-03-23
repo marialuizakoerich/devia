@@ -7,13 +7,13 @@
 
 .input-form {
   width: 100%;
-  padding: 14px 18px;
+  padding: 20px 18px;
   border-radius: var(--radius-sm);
   border: none;
   background: var(--cream-dark);
   box-shadow: var(--shadow-in);
   font-family: var(--font-label);
-  font-size: 12px;
+  font-size: 13px;
   color: var(--text);
   outline: none;
   input:hover {
@@ -172,23 +172,27 @@
 
 main {
   display: flex;
-  width: 60%;
-  height: 90%;
-  margin: 24px;
+  width: 100%;
+  max-width: 960px;
+  min-height: 580px;
   border-radius: var(--radius);
   box-shadow: var(--shadow-md);
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  margin: 24px;
 
   & .esquerda {
+    width: 420px;
+    min-width: 420px;
     background: var(--cream-dark);
-    height: 100%;
-    width: 40%;
-    position: relative;
-    overflow: hidden;
     padding: 30px;
     display: flex;
     flex-direction: column;
-    gap: 80px;
     justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+
     & .container-titulo-esquerda {
       display: flex;
       flex-direction: row;
@@ -301,13 +305,12 @@ main {
     right: -80px;
   }
   & .direita {
-    height: 100%;
     flex: 1;
     background: var(--cream);
-    padding: 20px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    justify-content: center;
 
     & .container-titulo-direita {
       display: flex;
@@ -318,7 +321,7 @@ main {
 
       h1 {
         font-family: var(--font-titulo);
-        font-size: 25px;
+        font-size: 32px;
         color: var(--text);
 
         span {
